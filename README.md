@@ -2,6 +2,8 @@
 
 An end-to-end Data Warehouse project built using the **Medallion Architecture** (Bronze → Silver → Gold), powered by **SQL Server**, **dbt Core**, and **Apache Airflow** on Docker.
 
+Inspired by the Data with Baraa tutorial, extended with dbt Core, 
+Apache Airflow, and Docker for a production-grade pipeline.
 ---
 
 ## 📊 Data Flow
