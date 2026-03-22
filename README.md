@@ -6,6 +6,15 @@ Inspired by the Data with Baraa tutorial, extended with dbt Core,
 Apache Airflow, and Docker for a production-grade pipeline.
 ---
 
+## 🚀 Key Highlights
+
+- Built a Medallion Architecture pipeline (Bronze → Silver → Gold)
+- Designed a Star Schema with fact and dimension tables
+- Implemented data cleaning, validation, and deduplication logic
+- Used dbt Core for modular transformations, testing, and documentation
+- Orchestrated the pipeline using Apache Airflow DAGs
+- Containerized the environment using Docker for reproducibility
+
 ## 📊 Data Flow
 
 <img width="1197" height="757" alt="Data Flow Diagram" src="https://github.com/user-attachments/assets/3ea3bdd7-b5ef-4f2f-8dfa-8b848789e1d4" />
@@ -60,10 +69,14 @@ Apache Airflow, and Docker for a production-grade pipeline.
 - Date validation and sales amount recalculation
 
 ## 🥇 Gold Layer
-- Business-ready **dimensional model** built as dbt views
-- `dim_customers` — integrated from 3 Silver tables
-- `dim_products` — integrated from 2 Silver tables
-- `fact_sales` — transactional fact table joined with dimension keys
+
+A business-oriented Star Schema designed for analytics and reporting:
+
+- dim_customers — unified customer dimension combining CRM and ERP data
+- dim_products — enriched product dimension with category hierarchy
+- fact_sales — transactional fact table capturing sales metrics
+
+The model enables efficient querying for KPIs such as revenue, customer segmentation, and product performance.
 
 ---
 
