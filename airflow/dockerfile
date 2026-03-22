@@ -1,0 +1,16 @@
+FROM apache/airflow:2.8.1
+
+USER root
+
+RUN apt-get update \
+    && apt-get install -y curl apt-transport-https gnupg2 \
+    && curl https://packages.microsoft.com/keys/microsoft.asc > /usr/share/keyrings/microsoft.asc \
+    && echo "deb [signed-by=/usr/share/keyrings/microsoft.asc] https://packages.microsoft.com/debian/11/prod bullseye main" > /etc/apt/sources.list.d/mssql-release.list \
+    && apt-get update \
+    && ACCEPT_EULA=Y apt-get install -y msodbcsql17 unixodbc-dev \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+USER airflow
+
+RUN pip install dbt-sqlserver

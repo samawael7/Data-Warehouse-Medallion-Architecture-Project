@@ -1,0 +1,15 @@
+datawarehouse:
+  outputs:
+    dev:
+      type: sqlserver
+      driver: 'ODBC Driver 17 for SQL Server'
+      host: host.docker.internal
+      port: 1433
+      database: SalesDWHProject
+      schema: dbo
+      user: samaw
+      password: '20210425'
+      trust_cert: true
+      encrypt: false
+      threads: 4
+  target: dev
