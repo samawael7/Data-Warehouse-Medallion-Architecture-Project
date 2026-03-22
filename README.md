@@ -4,7 +4,10 @@ An end-to-end Data Warehouse project built using the **Medallion Architecture** 
 
 Inspired by the Data with Baraa tutorial, extended with dbt Core, 
 Apache Airflow, and Docker for a production-grade pipeline.
+
 ---
+
+
 
 ## 🚀 Key Highlights
 
