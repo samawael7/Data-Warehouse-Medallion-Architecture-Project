@@ -6,13 +6,13 @@ An end-to-end Data Warehouse project built using the **Medallion Architecture** 
 
 ## 📊 Data Flow
 
-![Data Flow Diagram](docs/Data%20Flow%20Diagram.png)
+<img width="1197" height="757" alt="Data Flow Diagram" src="https://github.com/user-attachments/assets/3ea3bdd7-b5ef-4f2f-8dfa-8b848789e1d4" />
 
 ---
 
 ## 🏅 Medallion Architecture
 
-![Medallion Architecture](docs/Data%20Medallion%20Archeticture.png)
+<img width="1263" height="751" alt="Data Medallion Archeticture" src="https://github.com/user-attachments/assets/d39d6fb1-606c-464b-9a92-33cfbc0c3672" />
 
 ---
 
